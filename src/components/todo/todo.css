@@ -1,0 +1,33 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.task-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+}
+
+.btn-delete i {
+    font-size: 16px;
+    color: #ef476f;
+    margin-right: 5px;
+}
+
+.btn-edit i {
+    font-size: 16px;
+    color: #ffd166;
+    margin-right: 5px;
+}
+
+.btn-done i {
+    font-size: 16px;
+    color: #06d6a0;
+    margin-right: 5px;
+}

@@ -1,0 +1,10 @@
+.todolist {
+    padding-top: 30px;
+    width: 90%;
+    min-height: 55vh;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px dashed #26547c;
+    margin: auto;
+    position: 50%;
+}

@@ -1,6 +1,6 @@
 .header {
     margin-top: 20px;
-    background-color: cornsilk;
+    background-color: #fcfcfc;
     min-width: 80%;
     max-height: 10vh;
     border-radius: 20px;
@@ -22,9 +22,10 @@
 }
 
 .header__title {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     text-transform: capitalize;
-    color: #545454;
+    color: #26547c;
     font-weight: 700;
 }
 
@@ -34,5 +35,5 @@
     font-size: 1.375rem;
     text-transform: capitalize;
     font-weight: 700;
-    color: #545454;
+    color: #26547c;
 }

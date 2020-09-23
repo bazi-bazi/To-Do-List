@@ -21,10 +21,27 @@ html {
 /* main styles */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    color: #26547c;
     margin: auto;
     width: 50%;
     background: #292F91;
     background: linear-gradient(to top left, #292F91, #4DAADF);
 }
+
+.main {
+    margin-top: 20px;
+    background-color: #fcfcfc;
+    min-width: 80%;
+    min-height: 80vh;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: -1px 20px 60px 0px rgba(0, 0, 0, 0.20);
+}
+
+
+green: 06d6a0;
+red: ef476f;
+yellow: ffd166;
+blue: 26547c;

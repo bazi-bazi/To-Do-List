@@ -1,10 +1,10 @@
 import React from "react";
 import ToDo from "../todo";
+import "./Todolist.css";
 
 const ToDoList = () => {
   return (
-    <div>
-      <h2>To Do List</h2>
+    <div className="todolist">
       <ToDo />
     </div>
   );
