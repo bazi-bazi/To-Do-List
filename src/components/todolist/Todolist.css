@@ -8,3 +8,8 @@
     margin: auto;
     position: 50%;
 }
+
+.todolist_notask {
+    padding-top: 30px;
+    text-align: center;
+}

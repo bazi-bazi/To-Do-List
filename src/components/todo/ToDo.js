@@ -4,9 +4,12 @@ import { deleteTodo, updateTodo } from "../../redux/actions";
 import "./todo.css";
 
 const ToDo = ({ todo }) => {
+  const [check, setCheck] = useState(false);
   const [editable, setEditable] = useState(false);
   const [name, setName] = useState(todo.name);
   let dispatch = useDispatch();
+
+  const setUnsetCheck = () => setCheck(!check);
   return (
     <div>
       <li className="list-item">
@@ -20,9 +23,14 @@ const ToDo = ({ todo }) => {
         ) : (
           <span>{todo.name}</span>
         )}
+        {check ? <p style={{ color: "#06d6a0" }}>Done</p> : <p>Proceed...</p>}
         <div>
-          <button className="btn-done task-btn">
-            <i className="fas fa-check"></i>
+          <button className="btn-done task-btn" onClick={setUnsetCheck}>
+            {check ? (
+              <i className="fas fa-check"></i>
+            ) : (
+              <i className="fas fa-check" style={{ color: "#5765" }}></i>
+            )}
           </button>
           <button
             type="submit"

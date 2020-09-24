@@ -7,9 +7,13 @@ const ToDoList = () => {
   let todos = useSelector((state) => state);
   return (
     <div className="todolist">
-      {todos.map((todo) => {
-        return <ToDo key={todo.id} todo={todo} />;
-      })}
+      {todos < 1 ? (
+        <h3 className="todolist_notask">No Task Assigned Yet</h3>
+      ) : (
+        todos.map((todo) => {
+          return <ToDo key={todo.id} todo={todo} />;
+        })
+      )}
     </div>
   );
 };
