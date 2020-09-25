@@ -23,7 +23,15 @@ const ToDo = ({ todo }) => {
         ) : (
           <span>{todo.name}</span>
         )}
-        {check ? <p style={{ color: "#06d6a0" }}>Done</p> : <p>Proceed...</p>}
+        {check ? (
+          <p style={{ color: "#06d6a0" }}>Done</p>
+        ) : (
+          <p className="saving">
+            Proceed<span>.</span>
+            <span>.</span>
+            <span>.</span>
+          </p>
+        )}
         <div>
           <button className="btn-done task-btn" onClick={setUnsetCheck}>
             {check ? (
