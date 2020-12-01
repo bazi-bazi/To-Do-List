@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { deleteTodo, updateTodo } from "../../redux/actions";
+import { deleteTodo, updateTodo, checkTodo } from "../../redux/actions";
 import "./todo.css";
 
 const ToDo = ({ todo }) => {
@@ -9,7 +9,9 @@ const ToDo = ({ todo }) => {
   const [name, setName] = useState(todo.name);
   let dispatch = useDispatch();
 
-  const setUnsetCheck = () => setCheck(!check);
+  const setUnsetCheck = () => {
+    setCheck(!check);
+  };
   return (
     <div>
       <li className="list-item">
